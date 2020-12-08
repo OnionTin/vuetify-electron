@@ -1,8 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
-import vuetify from './plugins/vuetify';  // 只引入则属于全局引入\
-import router from './routes/router';
-// 配置局部引入
+import vuetify from './plugins/vuetify';  // 只有这一条就是全局引入 => 全局引入在webpack打包时会全部打入
+// 下边这些都是按需引入需要的配置
 import Vuetify, {
     VAlert,
     VApp,
@@ -22,6 +21,5 @@ Vue.use(Vuetify, {
 Vue.config.productionTip = false
 new Vue({
   vuetify,
-  router,
   render: function (h) { return h(App) }
 }).$mount('#app')

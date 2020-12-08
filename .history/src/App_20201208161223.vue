@@ -31,7 +31,7 @@
       <!--   分享按钮   -->
       <VBtn
         href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
+        target="https://www.baidu.com"
         text
       >
         <span class="mr-2">Latest Release</span>
@@ -40,10 +40,7 @@
     </VAppBar>
     <!--  主要部分  -->
     <v-main>
-      <!-- <HelloWorld/> -->
-      <div id="app" class="flexCol">
-        <router-view></router-view>
-      </div>
+      <HelloWorld/>
     </v-main>
   </VApp>
 </template>

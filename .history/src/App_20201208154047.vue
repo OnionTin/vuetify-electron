@@ -40,10 +40,7 @@
     </VAppBar>
     <!--  主要部分  -->
     <v-main>
-      <!-- <HelloWorld/> -->
-      <div id="app" class="flexCol">
-        <router-view></router-view>
-      </div>
+      <HelloWorld/>
     </v-main>
   </VApp>
 </template>
