@@ -2,7 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import vuetify from './plugins/vuetify';  // 只引入则属于全局引入\
 import router from './routes/router';
-import store from './store/index';
+import storer from './store/index';
 // 配置局部引入
 import Vuetify, {
     VAlert,
@@ -24,6 +24,6 @@ Vue.config.productionTip = false
 new Vue({
   vuetify,
   router,
-  store,
+  storer,
   render: function (h) { return h(App) }
 }).$mount('#app')

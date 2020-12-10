@@ -12,9 +12,6 @@
     components:{ HelloWorld },
     computed: mapState({
       name: state => state.mySelf.name
-    }),
-    mounted(){
-      console.log(this.$store)
-    }
+    })
   }
 </script>

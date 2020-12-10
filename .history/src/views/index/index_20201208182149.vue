@@ -11,10 +11,7 @@
     name:'Index',
     components:{ HelloWorld },
     computed: mapState({
-      name: state => state.mySelf.name
-    }),
-    mounted(){
-      console.log(this.$store)
-    }
+      name: state=> state.mySelf.name;
+    })
   }
 </script>

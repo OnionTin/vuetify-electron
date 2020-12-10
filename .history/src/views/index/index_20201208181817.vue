@@ -6,15 +6,13 @@
 </template>
 <script>
   import HelloWorld from "@/components/HelloWorld";
-  import { mapState } from 'vuex'
   export default {
     name:'Index',
     components:{ HelloWorld },
-    computed: mapState({
-      name: state => state.mySelf.name
-    }),
-    mounted(){
-      console.log(this.$store)
+    computed:{
+      name(){
+        return this.$store.state.mySelf.name
+      }
     }
   }
 </script>
